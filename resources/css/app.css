@@ -19,14 +19,14 @@ img {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 40%;
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 body {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .card {
     margin-top: 100px;
@@ -35,11 +35,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+main {
+    flex: 1;
+}
 
 .products-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
 }
@@ -55,7 +58,6 @@ body {
 
 .product-card img {
     height: 250px;
-    /* height: auto; */
     border-radius: 4px;
 }
 
@@ -67,5 +69,10 @@ body {
 .product-card p {
     font-weight: bold;
     color: #333;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
 }
 

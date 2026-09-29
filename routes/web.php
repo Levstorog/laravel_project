@@ -17,4 +17,7 @@ Route::get('/array', function () {
 })->name('array');
 
 Route::get('/', [MainController::class, 'showIndex'])-> name('home');
-Route::get('/array', [MainController::class, 'showArray'])-> name('array');
+Route::get('/array', [MainController::class, 'showArray'])->name('array');
+Route::get('/array/mixing', [MainController::class, 'mixing'])->name('array.mixing');
+Route::get('/array/sorting', [MainController::class, 'sorting'])->name('array.sorting');
+Route::get('/array/filtr', [MainController::class, 'filtr'])->name('array.filtr');
